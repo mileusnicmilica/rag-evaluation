@@ -1,14 +1,13 @@
-# AI Bootcamp — Nedelja 7: RAG
+# RAG Evaluation
 
-Ovaj folder sadrži rad Milice i Nemanje na zadatku „Jedno kontrolisano poboljšanje RAG sistema“.
+Projekat za evaluaciju RAG sistema koji odgovara na pitanja na osnovu fiktivnog priručnika za zaposlene. Sadrži fiksni skup pitanja, alate za merenje i poređenje rezultata, kao i opcioni eksperiment sa embedding pretragom.
 
-- [Plan i podela](docs/PLAN.md)
-- [Milicin radni dnevnik](docs/milica-radni-dnevnik.md)
-- [Početno stanje i propusti](docs/pocetno-stanje.md)
-- [Specifikacija jedne obavezne promene M5](docs/specifikacija-promene.md)
-- [Odvojeni napredni embedding eksperiment](docs/napredni-embedding-eksperiment.md)
-- [Projektni README i komande](rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/README.md)
+## Sadržaj
 
-Početni eval rezultat je u `rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/results/before.json` (**6/12**). Opcioni embedding eksperiment ima zaseban rezultat (**7/12**) i opis ograničenja. M5 promena koju je Milica specifikovala za Nemanjin deo još nije sprovedena; rezultati embedding eksperimenta ne predstavljaju obavezno merenje posle M5.
+- [Aplikacija, testovi i uputstvo za pokretanje](rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/README.md)
+- [Dokumentacija i analiza](docs/)
+- [Sačuvani rezultati](rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/results/)
 
-Model i virtuelno okruženje su lokalni i izostavljeni iz Gita. Za embedding režim na drugom računaru instalirati `requirements-embeddings.txt` i jednom preuzeti model.
+## Pokretanje
+
+Uputstvo za instalaciju, testiranje i pokretanje evaluacije nalazi se u [projektnom README-u](rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/README.md). Osnovni režim koristi pretragu po ključnim rečima; embedding pretraga je zaseban, opcioni eksperiment.
