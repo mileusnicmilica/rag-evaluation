@@ -3,6 +3,7 @@ __pycache__/
 .pytest_cache/
 results/*.json
 !results/before.json
+!results/after.json
 !results/embeddings.json
 !results/embeddings-demo.json
 .cache/

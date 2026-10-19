@@ -37,6 +37,6 @@ Radni folder: `C:\Users\HP\Desktop\AI Bootcamp\week7-rag`
 
 Tutorov `rag-week-7-weak-checkpoint.zip` je naknadno dostavljen; original se nalazi u Downloads, a raspakovan projekat u radnom folderu. Početni rezultat i Milicina analiza nalaze se u `pocetno-stanje.md`, a specifikacija u `specifikacija-promene.md`. „Šablon za izveštaj pre/posle“ još nije pronađen među dostupnim fajlovima.
 
-**Status:** Milica je potvrdila plan 19. oktobra 2026. Početna provera, analiza propusta i nacrt specifikacije su završeni; Milica treba da ih pregleda. Nemanjina implementacija promene nije započeta.
+**Status:** Milica je potvrdila plan 19. oktobra 2026. Početna provera, analiza propusta i nacrt specifikacije su završeni; Milica treba da ih pregleda. Nemanja je zatim sproveo M5 i ponovio merenje; rezultat je u [`nemanja-rezultati.md`](nemanja-rezultati.md). Zajednički izveštaj i predaja još nisu završeni.
 
 **Naknadni napredni eksperiment:** na Milicin zahtev dodat je opcioni embedding režim u projektnom `src`. Rezultati i ograničenja su zapisani u `napredni-embedding-eksperiment.md`; obavezna M5 promena ostaje zaseban korak.

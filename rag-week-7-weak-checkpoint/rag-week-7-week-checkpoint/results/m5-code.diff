@@ -1,0 +1,34 @@
+diff --git a/rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/src/config.py b/rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/src/config.py
+index 1e4e222..17a894e 100644
+--- a/rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/src/config.py
++++ b/rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/src/config.py
+@@ -15 +15 @@ STOPWORDS_ENABLED = False
+-CURRENT_ONLY = False
++CURRENT_ONLY = True
+diff --git a/rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/src/retrieval.py b/rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/src/retrieval.py
+index 0357d25..559a8f5 100644
+--- a/rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/src/retrieval.py
++++ b/rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/src/retrieval.py
+@@ -37 +37 @@ def searchable_chunks(chunks: list[Chunk]) -> list[Chunk]:
+-        raise NotImplementedError("CURRENT_ONLY = True is not implemented yet.")
++        return [chunk for chunk in chunks if chunk.status == "current"]
+diff --git a/rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/tests/test_retrieval.py b/rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/tests/test_retrieval.py
+index 4fd33b6..ee2034c 100644
+--- a/rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/tests/test_retrieval.py
++++ b/rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/tests/test_retrieval.py
+@@ -0,0 +1 @@
++from src import config
+@@ -27,0 +29,13 @@ def test_ties_are_broken_by_chunk_id() -> None:
++
++
++def test_current_only_excludes_superseded_chunks_before_ranking(monkeypatch) -> None:
++    chunks = [
++        Chunk("old", "old-doc", "Remote work", "2024", "superseded", "remote days remote days"),
++        Chunk("current", "current-doc", "Remote work", "2026", "current", "remote days are available"),
++    ]
++
++    monkeypatch.setattr(config, "CURRENT_ONLY", False)
++    assert [r.chunk.chunk_id for r in retrieve_top_k("remote days", chunks, k=2)] == ["old", "current"]
++
++    monkeypatch.setattr(config, "CURRENT_ONLY", True)
++    assert [r.chunk.chunk_id for r in retrieve_top_k("remote days", chunks, k=2)] == ["current"]

@@ -39,6 +39,8 @@ BM25 i embeddings, pomenuti na času, opisani su u početnoj analizi kao mogući
 5. Ručno pokrenuti CLI za E06 sa `--show-retrieved`; proveriti tekst odgovora, citat, status i verziju dokumenta.
 6. U izveštaju odvojiti izmereni ishod od ove hipoteze. Ako E06 i dalje ne prolazi, tako i napisati.
 
-**Status implementacije:** nije započeta. Ovu specifikaciju i izbor M5 Milica treba da pregleda pre nego što Nemanja promeni kod.
+**Status u trenutku pisanja specifikacije:** implementacija nije bila započeta. Milica još treba da pregleda i potvrdi svoj deo pre zajedničke predaje.
 
 **Naknadna beleška (19. oktobar 2026):** na Milicin poseban zahtev dodat je opcioni embedding režim u `src`. Njegov rezultat je dokumentovan [odvojeno](napredni-embedding-eksperiment.md). M5 iz ove specifikacije i dalje nije implementiran.
+
+**Naknadni ishod M5:** Nemanja je sproveo opisani filter i izmerio rezultat. Dokazi i ograničenja su u [`nemanja-rezultati.md`](nemanja-rezultati.md).

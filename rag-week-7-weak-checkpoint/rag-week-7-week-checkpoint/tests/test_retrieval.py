@@ -1,3 +1,4 @@
+from src import config
 from src.chunking import Chunk
 from src.retrieval import retrieve_top_k
 
@@ -25,3 +26,16 @@ def test_ties_are_broken_by_chunk_id() -> None:
     chunks = [make_chunk("b", "leave policy"), make_chunk("a", "leave policy")]
     results = retrieve_top_k("leave", chunks, k=2)
     assert [r.chunk.chunk_id for r in results] == ["a", "b"]
+
+
+def test_current_only_excludes_superseded_chunks_before_ranking(monkeypatch) -> None:
+    chunks = [
+        Chunk("old", "old-doc", "Remote work", "2024", "superseded", "remote days remote days"),
+        Chunk("current", "current-doc", "Remote work", "2026", "current", "remote days are available"),
+    ]
+
+    monkeypatch.setattr(config, "CURRENT_ONLY", False)
+    assert [r.chunk.chunk_id for r in retrieve_top_k("remote days", chunks, k=2)] == ["old", "current"]
+
+    monkeypatch.setattr(config, "CURRENT_ONLY", True)
+    assert [r.chunk.chunk_id for r in retrieve_top_k("remote days", chunks, k=2)] == ["current"]
