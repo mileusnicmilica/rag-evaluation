@@ -41,6 +41,6 @@ BM25 i embeddings, pomenuti na času, opisani su u početnoj analizi kao mogući
 
 **Status u trenutku pisanja specifikacije:** implementacija nije bila započeta. Milica još treba da pregleda i potvrdi svoj deo pre zajedničke predaje.
 
-**Naknadna beleška (19. oktobar 2026):** na Milicin poseban zahtev dodat je opcioni embedding režim u `src`. Njegov rezultat je dokumentovan [odvojeno](napredni-embedding-eksperiment.md). M5 iz ove specifikacije i dalje nije implementiran.
+**Naknadna beleška (19. oktobar 2026):** na Milicin poseban zahtev dodat je opcioni embedding režim u `src`. Njegov početni rezultat je dokumentovan [odvojeno](napredni-embedding-eksperiment.md).
 
-**Naknadni ishod M5:** Nemanja je sproveo opisani filter i izmerio rezultat. Dokazi i ograničenja su u [`nemanja-rezultati.md`](nemanja-rezultati.md).
+**Naknadni ishod M5:** Nemanjin deo, uz zabeleženu AI pomoć, sproveden je i izmeren kao jedna promena. Dokazi i ograničenja su u [`nemanja-rezultati.md`](nemanja-rezultati.md). Kasniji [napredni eksperiment](../advanced-experiment/README.md) sadrži više odvojenih koraka.

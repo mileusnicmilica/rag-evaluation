@@ -6,6 +6,8 @@ Projekat za evaluaciju RAG sistema koji odgovara na pitanja na osnovu fiktivnog 
 
 - [Aplikacija, testovi i uputstvo za pokretanje](rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/README.md)
 - [Dokumentacija i analiza](docs/)
+- [Rezultat obavezne promene M5](docs/nemanja-rezultati.md)
+- [Odvojeni napredni eksperiment](advanced-experiment/README.md)
 - [Sačuvani rezultati](rag-week-7-weak-checkpoint/rag-week-7-week-checkpoint/results/)
 
 ## Pokretanje

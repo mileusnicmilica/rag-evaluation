@@ -2,7 +2,9 @@
 
 ## Status
 
-**Početna provera, analiza propusta i predlog specifikacije su završeni.** RAG kod nije menjan. Detaljni nalazi su u [`pocetno-stanje.md`](pocetno-stanje.md), a predlog za Nemanjinu izmenu u [`specifikacija-promene.md`](specifikacija-promene.md). Milica treba da pregleda zaključke i potvrdi da su to njeni stvarni doprinosi pre predaje.
+**Status 19. oktobra 2026:** Početna provera, analiza propusta i predlog specifikacije su završeni. RAG kod tada nije menjan. Detaljni nalazi su u [`pocetno-stanje.md`](pocetno-stanje.md), a predlog izmene u [`specifikacija-promene.md`](specifikacija-promene.md). Milica treba da pregleda zaključke i potvrdi da su to njeni stvarni doprinosi pre predaje.
+
+**Ažuriranje 22. oktobra 2026:** Nemanjin deo M5 i merenje obavezne jedne promene zabeleženi su u [`nemanja-rezultati.md`](nemanja-rezultati.md), uključujući AI pomoć pri izmeni koda. Dodatna poboljšanja su u odvojenom [`advanced-experiment`](../advanced-experiment/README.md). Ovaj dnevnik ispod beleži raniji tok Milicinog rada.
 
 ## Izvor zahteva
 
@@ -27,7 +29,7 @@
 13. U zasebnom naknadnom zahtevu Milica je tražila embeddings u postojećem `src`. Dodat je opcioni režim, sprovedena evaluacija i rezultat zapisan u [`napredni-embedding-eksperiment.md`](napredni-embedding-eksperiment.md). Ova izmena je odvojena od prethodno napisanog Milicinog početnog stanja i M5 specifikacije.
 14. Milica je u sopstvenom PowerShell-u pokrenula testove, CLI sa embedding pretragom za E05, celu embedding evaluaciju i poređenje sa `before.json`. Sačuvani `results/embeddings-demo.json` je proveren i podudara se sa prethodnim embedding merenjem po svim redovima, metrikama, konfiguraciji i otisku eval skupa. Poređenje i ručni nalaz zabeleženi su u naprednom eksperimentu.
 
-## Predaja Nemanji i preostalo
+## Plan predaje Nemanji zapisan 19. oktobra
 
 Nemanja dobija [`specifikacija-promene.md`](specifikacija-promene.md), [`pocetno-stanje.md`](pocetno-stanje.md), `results/before.json` i početne izlaze testova/evaluacije u projektnoj fascikli. Tek po proveri specifikacije primenjuje jednu promenu i pokreće `after` merenje. Zvanični šablon izveštaja pre/posle treba pribaviti pre sastavljanja zajedničkog završnog izveštaja.
 

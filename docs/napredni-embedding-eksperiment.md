@@ -1,6 +1,6 @@
 # Napredni eksperiment: lokalni embeddings
 
-Ovaj zapis je odvojen od obaveznog eksperimenta sa jednom promenom M5. Na Milicin zahtev je u postojeći projektni `src` dodat **opcioni** embedding režim; podrazumevana leksička pretraga i sačuvani `results/before.json` nisu zamenjeni. Nemanjina M5 promena još nije sprovedena.
+Ovaj zapis opisuje stanje 19. oktobra 2026. i odvojen je od obaveznog eksperimenta sa jednom promenom M5. Na Milicin zahtev je u postojeći projektni `src` dodat **opcioni** embedding režim; podrazumevana leksička pretraga i sačuvani `results/before.json` nisu zamenjeni. M5 je naknadno sproveden i izmeren [zasebno](nemanja-rezultati.md), a kasniji višekoračni eksperiment je u [`advanced-experiment`](../advanced-experiment/README.md).
 
 ## Implementacija i pokretanje
 
